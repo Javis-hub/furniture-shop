@@ -1,0 +1,300 @@
+section{
+    padding: 30px 60px;
+    margin: 20px 0;
+}
+
+body{
+    padding-top: 60px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+
+.a1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.a1 h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+.a2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 80px 30px;
+    gap: 20px;
+    transition: .4s ease-in-out;
+}
+
+.a2-image{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.a2-image > img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.a2-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.a2-content h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.a2-content p{
+    word-spacing: 3px;
+}
+
+.a3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.a3-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.a3-content h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.a3-content ol{
+    padding-inline-start: 20px;
+}
+
+.a3-content ol li{
+    padding-bottom: 3px;
+}
+
+.a4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    transition: .4s ease-in-out;
+}
+
+.a4-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.a4-content ul li{
+    padding-bottom: 3px;
+}
+
+.a4-content h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.a4-image{
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px;
+    transition: .2s;
+}
+
+.a4-image > img{
+    display: block;
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: center;
+    transition: .2s ease-in-out;
+}
+
+.a4-image :hover {
+    transform: scale(1.1);
+    filter: brightness(.7);
+}
+
+.team{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.team-image{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 20px;
+}
+
+.T-1{
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+
+.T-1 img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.team-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.team-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.team-content > article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (max-width: 1100px){
+    section{
+        padding: 30px;
+    }
+    .a2{
+        margin: 0 0 30px;
+    }
+}
+
+@media (max-width: 920px){
+    .T-1 {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 768px){
+    section{
+        padding: 20px 15px;
+        margin: 0;
+    }
+
+    body{
+        padding-top: 40px;
+    }
+
+    
+p{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+    .a1,.a2,.a3,.a4{
+        grid-template-columns: 1fr;
+    }
+
+    .a2-image{
+        width: 100%;
+    }
+
+    .team{
+        grid-template-columns: 1fr;
+    }
+
+    .T-1{
+        width: 200px;
+        height: 300px;
+    }
+
+    .team-content{
+        gap: 20px;
+    }
+
+    .a2, .a3, .a4{
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    .team-content article{
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 480px){
+    
+    p{
+        font-weight: 400;
+        font-size: .98rem;
+    }
+
+    .a1 h1,
+    .a2-content h2,
+    .a4-content h2,
+    .a3-content h2,
+    .team-content h1{
+        font-size: 2.4rem;
+        line-height: 1.1;
+    }
+
+}
+
+@media (max-width: 450px){
+    .team-image{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .T-1{
+        max-width: 100%;
+        width: 110px;
+        height: 200px;
+    }
+    
+}
+
+@media (max-width: 420px){
+    .team-image{
+        flex-wrap: wrap;
+    }
+
+    .T-1{
+        width: 150px;
+    }
+}
+
+@media (max-width: 350px){
+    .T-1{
+        width: 100%;
+        height: 280px;
+    }
+}
